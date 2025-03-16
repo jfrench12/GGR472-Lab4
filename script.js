@@ -37,8 +37,8 @@ document.getElementById("geocoder").appendChild(geocoder.onAdd(map));
 Step 2: VIEW GEOJSON POINT DATA ON MAP
 --------------------------------------------------------------------*/
 let collisionJsonPromise = fetch(
-	// TODO update url
-	"https://raw.githubusercontent.com/smith-lg/ggr472-lab4/refs/heads/main/data/pedcyc_collision_06-21.geojson"
+	// Use GitPages URL.
+	"https://jfrench12.github.io/GGR472-Lab4/data/pedcyc_collision_06-21.geojson"
 ).then((res) => res.json());
 
 map.on("load", async () => {
